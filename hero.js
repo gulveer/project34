@@ -4,7 +4,7 @@ class Hero {
           'isStatic':false,
           'restitution':0.8,
           'friction':1,
-          'density':1
+          'density':0.5
       }
       
       //this.width = width;

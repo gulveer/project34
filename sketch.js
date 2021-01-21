@@ -23,23 +23,23 @@ function setup() {
   ground = new Ground(350,480,1000,10);
   hero = new Hero(200,200,30);
   rope = new Fly(hero.body,{x:200, y:200});
-  monster = new Monster(800,100,300);
+  monster = new Monster(800,100,100);
  
-  block1 = new Block(100,480,30,30);
-  block2 = new Block(100,510,30,30);
-  block3 = new Block(100,540,30,30);
-  block4 = new Block(100,570,30,30);
-  block5 = new Block(100,600,30,30);
-  block6 = new Block(200,480,30,30);
-  block7 = new Block(200,510,30,30);
-  block8 = new Block(200,540,30,30);
-  block9 = new Block(200,570,30,30);
-  block10 = new Block(300,480,30,30);
-  block11 = new Block(300,510,30,30);
-  block12 = new Block(300,540,30,30);
-  block13 = new Block(300,570,30,30);
-  block14 = new Block(300,600,30,30);
-  block15 = new Block(300,630,30,30);
+  block1 = new Block(400,300,30,30);
+  block2 = new Block(400,300,30,30);
+  block3 = new Block(400,300,30,30);
+  block4 = new Block(400,300,30,30);
+  block5 = new Block(400,300,30,30);
+  block6 = new Block(500,300,30,30);
+  block7 = new Block(500,300,30,30);
+  block8 = new Block(500,300,30,30);
+  block9 = new Block(500,300,30,30);
+  block10 = new Block(600,300,30,30);
+  block11 = new Block(600,300,30,30);
+  block12 = new Block(600,300,30,30);
+  block13 = new Block(600,300,30,30);
+  block14 = new Block(600,300,30,30);
+  block15 = new Block(600,300,30,30);
   
  Engine.run(engine)
 }
@@ -47,6 +47,8 @@ function setup() {
 function draw() {
   background(back);
 
+  Engine.update(engine);
+  
   ground.display();
   hero.display();
   rope.display();
